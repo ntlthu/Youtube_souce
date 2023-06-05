@@ -392,6 +392,7 @@ ol li a {
 }
 .parentGroup .contentOutputVideo {
   margin-left: 20px;
+  width: 1050px;
 }
 .rika {
   margin-bottom: 10px;
@@ -406,6 +407,7 @@ ol li a {
   padding-top: 18px;
   color: #1e90ff;
 }
+/* màu text */
 .gradient-text1 {
   background-image: linear-gradient(to right, #000000, #737373);
   -webkit-background-clip: text;
@@ -455,6 +457,28 @@ ol li a {
   background-clip: text;
   text-fill-color: transparent;
 }
+.gradient-text8 {
+  background-image: linear-gradient(90deg, #8c52ff, #00bf63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gradient-text9 {
+  background-image: linear-gradient(90deg, #5de0e6, #004aad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gradient-text10 {
+  background-image: linear-gradient(90deg, #004aad, #cb6ce6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+/* ----------------- */
 .rikacontentNgheDoc .vanban p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
@@ -511,7 +535,7 @@ ol li a {
 }
 p.buttonluyendich {
   margin-bottom: 5px;
-  padding-bottom: 5px;
+  padding-top: 5px;
   font-weight: 700;
 }
 .moving-text {
@@ -687,18 +711,18 @@ ruby {
 }
 .carousel_single-item {
   /* background-color: antiquewhite; */
-  background-image: url(./img/rika.png);
+  background-image: url(../img/rika.png);
 
   /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: center;
 
-  width: 900px;
+  width: 100%;
   /* text-align: center; */
 }
 .carousel_single-item1 {
   /* background-color: antiquewhite; */
-  background-image: url(./img/rika.png);
+  background-image: url(../img/rika.png);
 
   /* background-size: cover; */
   background-repeat: no-repeat;
@@ -746,16 +770,44 @@ ruby {
   margin-top: 5px;
   margin-right: 5px;
 }
-
+/* Chia cột từ vựng */
+.carousel_single-item .changeContent {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel_single-item .changeContent .changeContent1 {
+  width: 50%;
+  padding-left: 30px;
+}
+/* Hiệu ứng JS và âm thanh */
 /* #text {
   transition: transform 0.5s, background-color 0.5s, color 0.5s;
-}
-.highlight {
-  color: red;
-  background-color: #0097b2;
-  transition: transform 0.5s;
 } */
+.highlight {
+  
+  /* background-color: #b3f3fe; */
+  /* màu trang trí họa tiết ↓ */
+  /* background-image: linear-gradient(to right, #F2E8D4, #C6C5B9, #EDC4AF); */
+  /* màu mờ ↓ */
+  /* background-image: linear-gradient(to right, #C7D2C3, #EFE6DD, #D3C0B8); */
+/* màu nước ↓ */
+background-image: linear-gradient(to right, #A9D8D7, #D0F1F9, #C7CEEA);
+color: red;
 
-#container p.active {
+  transition: transform 0.5s;
+  /* box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%); */
+  box-shadow: 10px 10px 5px rgb(194, 193, 193);
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+
+#contentChange p.active {
   transition: transform 0.5s;
 }
+
+.carousel_single-item .slideCarousel p {
+margin-top: 6px;
+/* margin-bottom: 0; */
+}
+
+.carousel_single-item .slideCarousel .changeContent1 p {font-size: 22px;}
