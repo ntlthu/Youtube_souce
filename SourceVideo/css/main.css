@@ -784,15 +784,15 @@ ruby {
   transition: transform 0.5s, background-color 0.5s, color 0.5s;
 } */
 .highlight {
-  
   /* background-color: #b3f3fe; */
   /* màu trang trí họa tiết ↓ */
   /* background-image: linear-gradient(to right, #F2E8D4, #C6C5B9, #EDC4AF); */
   /* màu mờ ↓ */
   /* background-image: linear-gradient(to right, #C7D2C3, #EFE6DD, #D3C0B8); */
-/* màu nước ↓ */
-background-image: linear-gradient(to right, #A9D8D7, #D0F1F9, #C7CEEA);
-color: red;
+  /* màu nước ↓ */
+  background-image: linear-gradient(to right, #a9d8d7, #d0f1f9, #c7ceea);
+  color: #dc4f72;
+  /* color: rgb(223, 5, 5); */
 
   transition: transform 0.5s;
   /* box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%); */
@@ -806,8 +806,10 @@ color: red;
 }
 
 .carousel_single-item .slideCarousel p {
-margin-top: 6px;
-/* margin-bottom: 0; */
+  margin-top: 6px;
+  /* margin-bottom: 0; */
 }
 
-.carousel_single-item .slideCarousel .changeContent1 p {font-size: 22px;}
+.carousel_single-item .slideCarousel .changeContent1 p {
+  font-size: 22px;
+}
