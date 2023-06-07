@@ -392,7 +392,9 @@ ol li a {
 }
 .parentGroup .contentOutputVideo {
   margin-left: 20px;
-  width: 1050px;
+  width: 1200px;
+  height: 675px;
+  
 }
 .rika {
   margin-bottom: 10px;
@@ -409,7 +411,7 @@ ol li a {
 }
 /* màu text */
 .gradient-text1 {
-  background-image: linear-gradient(to right, #000000, #737373);
+  background-image: linear-gradient(to right, #000000, #686767);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -478,7 +480,18 @@ ol li a {
   background-clip: text;
   text-fill-color: transparent;
 }
+.gradient-text11 {
+  background-image: linear-gradient(90deg, #ff3131, #ff914d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 /* ----------------- */
+/* background tạm thời */
+.rikacontentNgheDoc {
+  background-color: #a9d8d7;
+}
 .rikacontentNgheDoc .vanban p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
