@@ -394,7 +394,6 @@ ol li a {
   margin-left: 20px;
   width: 1280px;
   height: 720px;
-  
 }
 .rika {
   margin-bottom: 10px;
@@ -489,9 +488,9 @@ ol li a {
 }
 /* ----------------- */
 /* background tạm thời */
-.rikacontentNgheDoc {
+/* .rikacontentNgheDoc {
   background-color: #a9d8d7;
-}
+} */
 .rikacontentNgheDoc .vanban p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
@@ -724,11 +723,9 @@ ruby {
 }
 .carousel_single-item {
   /* background-color: antiquewhite; */
-  background-image: url(../img/rika.png);
-
-  /* background-size: cover; */
+  /* background-image: url(../img/mauxanhlam.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 
   width: 100%;
   /* text-align: center; */
@@ -815,4 +812,15 @@ ruby {
 
 .carousel_single-item .slideCarousel .changeContent1 p {
   font-size: 22px;
+}
+
+/* Ẩm thực việt nam */
+.carousel_single-item .slideCarouselAmThuc {
+  display: flex;
+}
+.slideCarouselAmThuc .VideoAmThuc {
+  width: 50%;
+}
+.slideCarouselAmThuc .AmThucContent {
+  width: 50%;
 }
