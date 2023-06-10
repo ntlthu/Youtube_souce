@@ -486,6 +486,13 @@ ol li a {
   background-clip: text;
   text-fill-color: transparent;
 }
+.gradient-text12 {
+  background-image: linear-gradient(90deg, #006699, #800080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 /* ----------------- */
 /* background tạm thời */
 /* .rikacontentNgheDoc {
@@ -729,6 +736,7 @@ ruby {
 
   width: 100%;
   /* text-align: center; */
+  height: 720px;
 }
 
 .videothanks {
@@ -790,15 +798,15 @@ ruby {
   /* màu mờ ↓ */
   /* background-image: linear-gradient(to right, #C7D2C3, #EFE6DD, #D3C0B8); */
   /* màu nước ↓ */
-  background-image: linear-gradient(to right, #a9d8d7, #d0f1f9, #c7ceea);
-  color: #dc4f72;
+  /* background-image: linear-gradient(to right, #a9d8d7, #d0f1f9, #c7ceea);
+  color: #dc4f72; */
   /* color: rgb(223, 5, 5); */
 
   transition: transform 0.5s;
   /* box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%); */
   box-shadow: 10px 10px 5px rgb(194, 193, 193);
-  border-radius: 10px;
-  padding: 5px 15px;
+  /* border-radius: 10px;
+  padding: 5px 15px; */
 }
 
 #contentChange p.active {
@@ -815,12 +823,36 @@ ruby {
 }
 
 /* Ẩm thực việt nam */
-.carousel_single-item .slideCarouselAmThuc {
+.carousel_single-item .slideCarouselAmThuc .slideAmthucFlex {
   display: flex;
 }
-.slideCarouselAmThuc .VideoAmThuc {
+.slideCarouselAmThuc .slideAmthucFlex .VideoAmThuc {
   width: 50%;
+  
+  
 }
-.slideCarouselAmThuc .AmThucContent {
+.slideCarouselAmThuc .slideAmthucFlex .AmThucContent {
   width: 50%;
+  align-self: center;
+  text-align: center;
+  padding: 0 20px;
+  background-image: url(../img/rika.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.slideAmthucFlex .VideoAmThuc video {
+  border-radius: 20px;
+}
+/* .slideAmthucFlex .VideoAmThuc .videohinhvuong {
+width: 80%;
+height: 80%;
+border-radius: 20px;
+} */
+/* .AmThucContentJP {
+  padding: 0 20px;
+} */
+.slideCarouselAmThuc .slideAmthucFlex .banhXEO {
+  padding-left: 35px;
 }
