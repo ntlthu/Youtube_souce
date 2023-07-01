@@ -1,108 +1,309 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="../SourceVideo/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuoc</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../slick-1.8.1/slick/slick.css"
+    />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../slick-1.8.1/slick/slick-theme.css"
+    />
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sample.css" />
   </head>
+
   <body>
-    <div id="contentChange">
-      <p id="p1">Nội dung thẻ p 1</p>
-      <p id="p2">Nội dung thẻ p 2</p>
-      <p id="p3">Nội dung thẻ p 3</p>
-      <!-- Thêm các thẻ p khác tại đây -->
-    </div>
+    <section class="mt-3">
+      <div class="parentGroup">
+        <div class="contentOutputVideo">
+          <div class="rika">
+            <div class="rikalogo">
+              <img src="../img/Học Tiếng Nhật Cùng.png" alt="" />
+              <h3 class="">Rika Channel</h3>
+            </div>
 
-    <button onclick="toggleParagraph(1)">Button 1</button>
-    <button onclick="toggleParagraph(2)">Button 2</button>
-    <button onclick="toggleParagraph(3)">Button 3</button>
-    <!-- Thêm các button khác tại đây -->
+            <div class="rikabutton">
+              <button class="buttonListen">Luyện Nghe</button>
+              <button class="buttonRead">Luyện Đọc</button>
+              <button class="buttonTrans">Luyện Dịch</button>
+              <h4>Luyện 3 kỹ năng tiếng Nhật chỉ trong 1 video</h4>
+            </div>
+          </div>
+          <div class="rikacontentNgheDoc">
+            <div>
+              <p
+                class="buttonluyendich moving-text-dich gradient-text10"
+                style="font-size: 22px; text-align: center; font-weight: 900"
+              >
+                Nuoc
+              </p>
+            </div>
+            <div class="carousel_single-item mt-3">
+              <div class="slideCarouselAmThuc AlignCenterVideo OpenSlide">
+                <video
+                  id="video1"
+                  style="border-radius: 15px"
+                  src="../img/"
+                ></video>
+              </div>
+              <div class="slideCarouselAmThuc Coffee">
+                <h2 style="text-align: center; font-weight: 900">
+                  「アイスミルクコーヒー」（）
+                </h2>
+                <div class="slideAmthucFlex">
+                  <div class="VideoAmThuc">
+                    <video id="video2" src="../img/IcedMilkCoffee.mp4"></video>
+                  </div>
+                  <div class="AmThucContent" id="content1">
+                    <p id="jpvn1" class="styleChuVN">
+                      Cà phê sữa đá là một loại đồ uống truyền thống và mang
+                      tính biểu tượng của Việt Nam. Nó được pha chế bằng cách sử
+                      dụng các loại cà phê rang xay cho vào phin cùng với nước
+                      nóng để lọc lấy nước cà phê nguyên chất, kết hợp với sữa
+                      đặc có đường và cho thêm ít đá. Các loại cà phê rang xay
+                      được dùng trong pha chế cà phê tại Việt Nam thì có nhiều
+                      loại, nhưng được sử dụng nhiều nhất là cà phê Robusta, là
+                      loại cà phê ưa thích của người Việt, và cũng được trồng
+                      nhiều nhất ở Việt Nam.
+                    </p>
+                    <h6 id="h1" style="display: none" class="styleChuVN">
+                      Hương vị khác biệt của Cà phê sữa đá Việt Nam đến từ sự
+                      hòa quyện hài hòa giữa vị đắng, vị thơm của cà phê, và vị
+                      ngọt béo của sữa đặc, tạo nên một trải nghiệm thực sự độc
+                      đáo và khó quên. Cà phê sữa đá thường được thưởng thức vào
+                      buổi sáng hoặc vào những lúc bạn cần sự tỉnh táo trong
+                      ngày. Nó không chỉ là một loại đồ uống mà còn là một phần
+                      không thể thiếu trong nền văn hóa cà phê phong phú của
+                      Việt Nam. Bạn có thể tìm thấy cà phê sữa đá được phục vụ
+                      tại các quán cà phê, các quầy bán cà phê ven đường, và nhà
+                      hàng trên khắp Việt Nam. Đừng bỏ lỡ cơ hội thưởng thức
+                      hương vị đặc biệt của Cà phê sữa đá Việt Nam khi bạn đến
+                      thăm Việt Nam!
+                    </h6>
+                  </div>
+                </div>
+                <div class="AmThucContentJP" id="content2">
+                  <p id="jpvn2" class="styleChuJP">
+                    アイスミルクコーヒーは、ベトナムの<ruby
+                      >伝統的<rt>でんとうてき</rt></ruby
+                    >な<ruby>飲み物<rt>のみもの</rt></ruby
+                    >であり、<ruby>象徴的<rt>しょうちょうてき</rt></ruby
+                    >な<ruby>存在<rt>そんざい</rt></ruby
+                    >です。 <ruby>純粋<rt>じゅんすい</rt></ruby
+                    >なコーヒー水を<ruby>絞<rt>しぼ</rt></ruby
+                    >るために<ruby>焙煎<rt>ばいせん</rt></ruby
+                    >・<ruby>粉砕<rt>ふんさい</rt></ruby
+                    >した コーヒー<ruby>粉<rt>こ</rt></ruby
+                    >と<ruby>熱水<rt>ねっすい</rt></ruby
+                    >をカフェフィルターに<ruby>入<rt>い</rt></ruby
+                    >れて<ruby>甘<rt>あま</rt></ruby
+                    >く<ruby>濃厚<rt>のうこう</rt></ruby
+                    >なコンデンスミルクと<ruby>少量<rt>しょうりょう</rt></ruby
+                    >の<ruby>氷<rt>こおり</rt></ruby
+                    >を<ruby>追加<rt>ついか</rt></ruby
+                    >してブレンドされます。 ベトナムで
+                    コーヒーをブレンドする<ruby>際<rt>さい</rt></ruby
+                    >に<ruby>使用<rt>しよう</rt></ruby
+                    >される<ruby>焙煎<rt>ばいせん</rt></ruby
+                    >・<ruby>粉砕<rt>ふんさい</rt></ruby
+                    >したコーヒーには、さまざまな<ruby
+                      >種類<rt>しゅるい</rt></ruby
+                    >がありますが、<ruby>最<rt>もっと</rt></ruby
+                    >も<ruby>一般的<rt>いっぱんてき</rt></ruby
+                    >なのはベトナム人に<ruby>好<rt>この</rt></ruby
+                    >まれ、ベトナムで<ruby>最<rt>もっと</rt></ruby
+                    >も<ruby>栽培<rt>さいばい</rt></ruby
+                    >されているロブスタ<ruby>種<rt>しゅ</rt></ruby
+                    >のコーヒーです。
+                  </p>
+                  <h6 id="h2" style="display: none" class="styleChuJP">
+                    ベトナムのアイスミルクコーヒーの<ruby
+                      >独特<rt>どくとく</rt></ruby
+                    >の<ruby>味<rt>あじ</rt></ruby
+                    >わいは、コーヒーの<ruby>苦味<rt>にがみ</rt></ruby
+                    >と<ruby>香<rt>かお</rt></ruby
+                    >り、そしてコンデンスミルクの<ruby
+                      >濃厚<rt>のうこう</rt></ruby
+                    >な甘さが<ruby>調和<rt>ちょうわ</rt></ruby
+                    >して、<ruby>非常<rt>ひじょう</rt></ruby
+                    >にユニークで<ruby>忘<rt>わす</rt></ruby
+                    >れられない<ruby>体験<rt>たいけん</rt></ruby
+                    >を<ruby>生み出<rt>うみだ</rt></ruby
+                    >します。 ベトナムの アイスミルクコーヒーは、<ruby
+                      >朝<rt>あさ</rt></ruby
+                    >や、<ruby>元気<rt>げんき</rt></ruby
+                    >が<ruby>必要<rt>ひつよう</rt></ruby
+                    >なときによく<ruby>飲<rt>の</rt></ruby
+                    >まれます。それは<ruby>単<rt>たん</rt></ruby
+                    >なる<ruby>飲み物<rt>のみもの</rt></ruby
+                    >だけでなく、ベトナムの<ruby>豊<rt>ゆた</rt></ruby
+                    >かなコーヒー<ruby>文化<rt>ぶんか</rt></ruby
+                    >において<ruby>欠<rt>か</rt></ruby
+                    >かせない<ruby>要素<rt>ようそ</rt></ruby
+                    >です。 ベトナム<ruby>全土<rt>ぜんど</rt></ruby
+                    >の<ruby>喫茶店<rt>きっさてん</rt></ruby
+                    >、<ruby>屋台店<rt>やたいみせ</rt></ruby
+                    >、レストランでアイスミルクコーヒーを見つけることができます。ベトナムを<ruby
+                      >訪<rt>おとず</rt></ruby
+                    >れる際には、ベトナムのアイスミルクコーヒーの<ruby
+                      >特別<rt>とくべつ</rt></ruby
+                    >な味わいをお<ruby>見逃<rt>みのが</rt></ruby
+                    >しなく！
+                  </h6>
+                </div>
+              </div>
+              <div class="slideCarouselAmThuc Coffee">
+                <h2 style="text-align: center; font-weight: 900">
+                  「アイスミルクコーヒー」（）
+                </h2>
+                <div class="slideAmthucFlex">
+                  <div class="VideoAmThuc">
+                    <video id="video2" src="../img/IcedMilkCoffee.mp4"></video>
+                  </div>
+                  <div class="AmThucContent">
+                    <p id="JpVN3" class="styleChuVN">
+                      Cà phê sữa đá là một loại đồ uống truyền thống và mang
+                      tính biểu tượng của Việt Nam. Nó được pha chế bằng cách sử
+                      dụng các loại cà phê rang xay cho vào phin cùng với nước
+                      nóng để lọc lấy nước cà phê nguyên chất, kết hợp với sữa
+                      đặc có đường và cho thêm ít đá. Các loại cà phê rang xay
+                      được dùng trong pha chế cà phê tại Việt Nam thì có nhiều
+                      loại, nhưng được sử dụng nhiều nhất là cà phê Robusta, là
+                      loại cà phê ưa thích của người Việt, và cũng được trồng
+                      nhiều nhất ở Việt Nam.
+                    </p>
+                  </div>
+                </div>
+                <div class="AmThucContentJP">
+                  <p id="JpVN4">
+                    Vietnamese Iced Coffee is a traditional and iconic beverage
+                    of Vietnam. It is created by using roasted coffee, passing
+                    hot water through the Vietnamese coffee filter, combined
+                    with sweet condensed milk and a few ice cubes. There are
+                    various types of coffee used in Vietnamese coffee making,
+                    but the most commonly used is Robusta coffee, which is a
+                    favorite of the Vietnamese people and also widely grown in
+                    Vietnam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="prepare ms-4">
+          <div class="phatVideo">
+            <button onclick="playVideo('video1')">Play Video 1</button>
+            <button onclick="playVideo('video2')">Play Video 2</button>
+            <button onclick="playVideo('video3')">Play Video 3</button>
+          </div>
+          <div class="changeContentForSlideDai">
+            <button id="button1">Button 1</button>
+            <button id="button2">Button 2</button>
+          </div>
+          <div class="changeENGJP">
+            <button onclick="changeJPEN(1)">JPENCaPhe</button>
+            <button onclick="changeJPEN(2)">JPENTraDa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BS -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <audio
-      id="audio1"
-      src="https://www.oxfordlearnersdictionaries.com/media/english/us_pron/c/com/compl/complete__us_1.mp3"
-    ></audio>
-    <audio
-      id="audio2"
-      src="https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/wor/word_/word__us_1.mp3"
-    ></audio>
-    <audio
-      id="audio3"
-      src="https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/word_/word__gb_1.mp3"
-    ></audio>
-    <!-- Thêm các audio khác tại đây -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
-    <script src="../SourceVideo/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- slick carousel -->
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel_single-item").slick({
+          // setting-name: setting-value
+          dots: true,
+        });
+      });
+    </script>
+
+    <!-- TOOLTIPS BS -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <!-- Popovers -->
+    <!-- <script>
+           const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+           const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+       </script> -->
+    <script>
+      $(".control-audio").click(function () {
+        let src = $(this).attr("src");
+        const audio = new Audio(src);
+        audio.play();
+      });
+    </script>
+    <!-- <script>
+      var video = document.getElementById("myVideo");
+      var playButton = document.getElementById("playButton");
+
+      playButton.addEventListener("click", function () {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    </script> -->
+    <script src="./sample.js"></script>
   </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      p {
-        transition: transform 0.5s, color 0.5s;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container"></div>
-
-    <script>
-      var paragraphs = [];
-      var audioElements = [];
-
-      function createParagraphsAndButtons() {
-        var container = document.getElementById("container");
-
-        for (var i = 0; i < 10; i++) {
-          var p = document.createElement("p");
-          p.textContent = "Đây là đoạn văn bản " + (i + 1);
-          paragraphs.push(p);
-          container.appendChild(p);
-
-          var button = document.createElement("button");
-          button.textContent = "Button " + (i + 1);
-          button.setAttribute("data-index", i);
-          button.addEventListener("click", toggleEffect);
-          container.appendChild(button);
-
-          var audioElement = document.createElement("audio");
-          audioElement.setAttribute(
-            "src",
-            "path_to_audio_file" + (i + 1) + ".mp3"
-          );
-          audioElements.push(audioElement);
-          container.appendChild(audioElement);
-        }
-      }
-
-      function toggleEffect(event) {
-        var index = event.target.getAttribute("data-index");
-        var paragraph = paragraphs[index];
-        var audioElement = audioElements[index];
-
-        if (paragraph.style.color === "blue") {
-          paragraph.style.color = "";
-          paragraph.style.transform = "";
-          stopSound(audioElement);
-        } else {
-          paragraph.style.color = "blue";
-          paragraph.style.transform = "translateY(-50px)";
-          playSound(audioElement);
-        }
-      }
-
-      function playSound(audioElement) {
-        audioElement.currentTime = 0;
-        audioElement.play();
-      }
-
-      function stopSound(audioElement) {
-        audioElement.pause();
-        audioElement.currentTime = 0;
-      }
-
-      // Call the function to create paragraphs and buttons
-      createParagraphsAndButtons();
-    </script>
-  </body>
-</html> -->
