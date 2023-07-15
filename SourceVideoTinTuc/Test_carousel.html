@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test_Carousel</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- font google -->
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick.css"
+    />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick-theme.css"
+    />
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Test_carousel.css" />
+  </head>
+
+  <body>
+    <ruby> <rt></rt></ruby>
+    <section class="container">
+      <div class="video-background">
+        <video autoplay muted loop id="video">
+          <source
+            src="./img/Canhhoaroi_ver2_backgroundtrang.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="content">
+          <div class="rika">
+            <div class="rikalogo">
+              <img src="./img/Học Tiếng Nhật Cùng.png" alt="" />
+              <h3 class="">Rika Channel</h3>
+            </div>
+
+            <div class="rikabutton">
+              <button class="buttonListen">Luyện Nghe</button>
+              <button class="buttonRead">Luyện Đọc</button>
+              <button class="buttonTrans">Luyện Dịch</button>
+              <h4>Luyện 3 kỹ năng tiếng Nhật chỉ trong 1 video</h4>
+            </div>
+          </div>
+          <div class="rikacontentNgheDoc">
+            <div class="rikatitle">
+              <p class="buttonluyennghe moving-text">Lần 1</p>
+              <h2>
+                どんな<ruby>状況<rt>じょうきょう</rt></ruby
+                >でも、<ruby>笑<rt>わら</rt></ruby
+                >う<ruby>機会<rt>きかい</rt></ruby
+                >を<ruby>見<rt>み</rt></ruby
+                >つける
+              </h2>
+              <p class="buttonluyennghe moving-text">Luyện Nghe</p>
+            </div>
+            <div class="carousel_single-item">
+              <div>
+                <div class="vanban">
+                  <p>
+                    <ruby>私<rt>わたし</rt></ruby
+                    >たちは、<ruby>人生<rt>じんせい</rt></ruby
+                    >をあまりにも<ruby>深刻<rt>しんこく</rt></ruby
+                    >に<ruby>考<rt>かんが</rt></ruby
+                    >える<ruby>傾向<rt>けいこう</rt></ruby
+                    >がある。<br />
+                    すでに<ruby>起<rt>お</rt></ruby
+                    >こった<ruby>悪<rt>わる</rt></ruby
+                    >いことや、これから<ruby>起<rt>お</rt></ruby
+                    >こるかもしれない<ruby>悪<rt>わる</rt></ruby
+                    >い <br />
+                    ことについて考えてばかりいるために、<br />
+                    「人生は<ruby>一大事<rt>いちだいじ</rt></ruby
+                    >である」と<ruby>思い込ん<rt>おもいこん</rt></ruby
+                    >でいるのだ。<br />
+                    たしかに、ときには深刻な<ruby>事態<rt>じたい</rt></ruby
+                    >に<ruby>直面<rt>ちょくめん</rt></ruby
+                    >することもある。
+                  </p>
+                  <!-- --------------------- -->
+                  <!-- đoạn 2 hạ font-size còn 31 -->
+                  <!-- <p>
+                              しかしそれを<ruby>除<rt>のぞ</rt></ruby
+                              >けば、人生は、<ruby>途方<rt>とほう</rt></ruby
+                              >もなく<ruby>面白<rt>おもしろ</rt></ruby
+                              >い。 今まで、<ruby>物事<rt>ものごと</rt></ruby
+                              >を<ruby>深刻<rt>しんこく</rt></ruby
+                              >に考えることが<ruby>多<rt>おお</rt></ruby
+                              >かったなら、 <ruby>態度<rt>たいど</rt></ruby
+                              >を<ruby>改<rt>あらた</rt></ruby
+                              >める<ruby>必要<rt>ひつよう</rt></ruby
+                              >がある。 笑うと<ruby>体内<rt>たいない</rt></ruby
+                              >でエンドルフィンが<ruby>分泌<rt>ぶんぴつ</rt></ruby
+                              >され、それが<ruby>素晴<rt>すば</rt></ruby
+                              >らしい<ruby>作用<rt>さよう</rt></ruby
+                              >をおよぼす。 それに<ruby>加<rt>くわ</rt></ruby
+                              >えて、笑いは<ruby>疲<rt>つか</rt></ruby
+                              >れた心を<ruby>癒<rt>いや</rt></ruby
+                              >し、<ruby>精神的<rt>せいしんてき</rt></ruby
+                              >エネルギーをふたたび<ruby>充電<rt>じゅうでん</rt></ruby
+                              >し、ストレスと<ruby>緊張<rt>きんちょう</rt></ruby
+                              >を<ruby>解<rt>と</rt></ruby
+                              >きほぐしてくれる。
+                            </p> -->
+
+                  <!-- ----------------------- -->
+                  <!-- <p>
+                            笑いは、人間だけに与えられた才能である。
+                            この才能を最大限に生かそう。
+                            笑う機会を増やして心身の健康を増進するためには、
+                            さまざまな状況で面白い要素を見つけることを <br />
+                            日ごろから 心がけるといい。 これを数週間実践すれば、<br />
+                            健康的な習慣が身につくみにつくはずだ。
+                          </p> -->
+                  <!-- đoạn 5 -->
+                  <!-- <p>
+                              周囲の人々はあなたの変化に驚くに違いない。<br />
+                              人生は深刻に考える必要はない。<br />
+                              日ごろから心がけて面白い要素を見つけ、笑う機会を増やせば、心身が健康になっていく。
+                            </p> -->
+                </div>
+              </div>
+              <div>
+                <div class="vanban">
+                  <!-- <p>
+                    <ruby>私<rt>わたし</rt></ruby
+                    >たちは、<ruby>人生<rt>じんせい</rt></ruby
+                    >をあまりにも<ruby>深刻<rt>しんこく</rt></ruby
+                    >に<ruby>考<rt>かんが</rt></ruby
+                    >える<ruby>傾向<rt>けいこう</rt></ruby
+                    >がある。<br />
+                    すでに<ruby>起<rt>お</rt></ruby
+                    >こった<ruby>悪<rt>わる</rt></ruby
+                    >いことや、これから<ruby>起<rt>お</rt></ruby
+                    >こるかもしれない<ruby>悪<rt>わる</rt></ruby
+                    >い <br />
+                    ことについて考えてばかりいるために、<br />
+                    「人生は<ruby>一大事<rt>いちだいじ</rt></ruby
+                    >である」と<ruby>思い込ん<rt>おもいこん</rt></ruby
+                    >でいるのだ。<br />
+                    たしかに、ときには深刻な<ruby>事態<rt>じたい</rt></ruby
+                    >に<ruby>直面<rt>ちょくめん</rt></ruby
+                    >することもある。
+                  </p> -->
+                  <!-- --------------------- -->
+                  <!-- đoạn 2 hạ font-size còn 31 -->
+                  <p>
+                    しかしそれを<ruby>除<rt>のぞ</rt></ruby
+                    >けば、人生は、<ruby>途方<rt>とほう</rt></ruby
+                    >もなく<ruby>面白<rt>おもしろ</rt></ruby
+                    >い。 今まで、<ruby>物事<rt>ものごと</rt></ruby
+                    >を<ruby>深刻<rt>しんこく</rt></ruby
+                    >に考えることが<ruby>多<rt>おお</rt></ruby
+                    >かったなら、 <ruby>態度<rt>たいど</rt></ruby
+                    >を<ruby>改<rt>あらた</rt></ruby
+                    >める<ruby>必要<rt>ひつよう</rt></ruby
+                    >がある。 笑うと<ruby>体内<rt>たいない</rt></ruby
+                    >でエンドルフィンが<ruby>分泌<rt>ぶんぴつ</rt></ruby
+                    >され、それが<ruby>素晴<rt>すば</rt></ruby
+                    >らしい<ruby>作用<rt>さよう</rt></ruby
+                    >をおよぼす。 それに<ruby>加<rt>くわ</rt></ruby
+                    >えて、笑いは<ruby>疲<rt>つか</rt></ruby
+                    >れた心を<ruby>癒<rt>いや</rt></ruby
+                    >し、<ruby>精神的<rt>せいしんてき</rt></ruby
+                    >エネルギーをふたたび<ruby>充電<rt>じゅうでん</rt></ruby
+                    >し、ストレスと<ruby>緊張<rt>きんちょう</rt></ruby
+                    >を<ruby>解<rt>と</rt></ruby
+                    >きほぐしてくれる。
+                  </p>
+
+                  <!-- ----------------------- -->
+                  <!-- <p>
+                            笑いは、人間だけに与えられた才能である。
+                            この才能を最大限に生かそう。
+                            笑う機会を増やして心身の健康を増進するためには、
+                            さまざまな状況で面白い要素を見つけることを <br />
+                            日ごろから 心がけるといい。 これを数週間実践すれば、<br />
+                            健康的な習慣が身につくみにつくはずだ。
+                          </p> -->
+                  <!-- đoạn 5 -->
+                  <!-- <p>
+                              周囲の人々はあなたの変化に驚くに違いない。<br />
+                              人生は深刻に考える必要はない。<br />
+                              日ごろから心がけて面白い要素を見つけ、笑う機会を増やせば、心身が健康になっていく。
+                            </p> -->
+                </div>
+              </div>
+              <div>
+                <div class="vanban">
+                  <p>
+                    <ruby>私<rt>わたし</rt></ruby
+                    >たちは、<ruby>人生<rt>じんせい</rt></ruby
+                    >をあまりにも<ruby>深刻<rt>しんこく</rt></ruby
+                    >に<ruby>考<rt>かんが</rt></ruby
+                    >える<ruby>傾向<rt>けいこう</rt></ruby
+                    >がある。<br />
+                    すでに<ruby>起<rt>お</rt></ruby
+                    >こった<ruby>悪<rt>わる</rt></ruby
+                    >いことや、これから<ruby>起<rt>お</rt></ruby
+                    >こるかもしれない<ruby>悪<rt>わる</rt></ruby
+                    >い <br />
+                    ことについて考えてばかりいるために、<br />
+                    「人生は<ruby>一大事<rt>いちだいじ</rt></ruby
+                    >である」と<ruby>思い込ん<rt>おもいこん</rt></ruby
+                    >でいるのだ。<br />
+                    たしかに、ときには深刻な<ruby>事態<rt>じたい</rt></ruby
+                    >に<ruby>直面<rt>ちょくめん</rt></ruby
+                    >することもある。
+                  </p>
+                  <!-- --------------------- -->
+                  <!-- đoạn 2 hạ font-size còn 31 -->
+                  <!-- <p>
+                              しかしそれを<ruby>除<rt>のぞ</rt></ruby
+                              >けば、人生は、<ruby>途方<rt>とほう</rt></ruby
+                              >もなく<ruby>面白<rt>おもしろ</rt></ruby
+                              >い。 今まで、<ruby>物事<rt>ものごと</rt></ruby
+                              >を<ruby>深刻<rt>しんこく</rt></ruby
+                              >に考えることが<ruby>多<rt>おお</rt></ruby
+                              >かったなら、 <ruby>態度<rt>たいど</rt></ruby
+                              >を<ruby>改<rt>あらた</rt></ruby
+                              >める<ruby>必要<rt>ひつよう</rt></ruby
+                              >がある。 笑うと<ruby>体内<rt>たいない</rt></ruby
+                              >でエンドルフィンが<ruby>分泌<rt>ぶんぴつ</rt></ruby
+                              >され、それが<ruby>素晴<rt>すば</rt></ruby
+                              >らしい<ruby>作用<rt>さよう</rt></ruby
+                              >をおよぼす。 それに<ruby>加<rt>くわ</rt></ruby
+                              >えて、笑いは<ruby>疲<rt>つか</rt></ruby
+                              >れた心を<ruby>癒<rt>いや</rt></ruby
+                              >し、<ruby>精神的<rt>せいしんてき</rt></ruby
+                              >エネルギーをふたたび<ruby>充電<rt>じゅうでん</rt></ruby
+                              >し、ストレスと<ruby>緊張<rt>きんちょう</rt></ruby
+                              >を<ruby>解<rt>と</rt></ruby
+                              >きほぐしてくれる。
+                            </p> -->
+
+                  <!-- ----------------------- -->
+                  <!-- <p>
+                            笑いは、人間だけに与えられた才能である。
+                            この才能を最大限に生かそう。
+                            笑う機会を増やして心身の健康を増進するためには、
+                            さまざまな状況で面白い要素を見つけることを <br />
+                            日ごろから 心がけるといい。 これを数週間実践すれば、<br />
+                            健康的な習慣が身につくみにつくはずだ。
+                          </p> -->
+                  <!-- đoạn 5 -->
+                  <!-- <p>
+                              周囲の人々はあなたの変化に驚くに違いない。<br />
+                              人生は深刻に考える必要はない。<br />
+                              日ごろから心がけて面白い要素を見つけ、笑う機会を増やせば、心身が健康になっていく。
+                            </p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BS -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- slick carousel -->
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel_single-item").slick({
+          // setting-name: setting-value
+          dots: true,
+        });
+      });
+    </script>
+    <!-- TOOLTIPS BS -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <!-- Popovers -->
+    <!-- <script>
+           const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+           const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+       </script> -->
+    <script>
+      $(".control-audio").click(function () {
+        let src = $(this).attr("src");
+        const audio = new Audio(src);
+        audio.play();
+      });
+    </script>
+  </body>
+</html>

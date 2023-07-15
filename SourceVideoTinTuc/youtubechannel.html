@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../SourceVideo/css/main.css" />
+  </head>
+  <body>
+    <div id="contentChange">
+      <p id="p1">Nội dung thẻ p 1</p>
+      <p id="p2">Nội dung thẻ p 2</p>
+      <p id="p3">Nội dung thẻ p 3</p>
+      <!-- Thêm các thẻ p khác tại đây -->
+    </div>
+
+    <button onclick="toggleParagraph(1)">Button 1</button>
+    <button onclick="toggleParagraph(2)">Button 2</button>
+    <button onclick="toggleParagraph(3)">Button 3</button>
+    <!-- Thêm các button khác tại đây -->
+
+    <audio
+      id="audio1"
+      src="https://www.oxfordlearnersdictionaries.com/media/english/us_pron/c/com/compl/complete__us_1.mp3"
+    ></audio>
+    <audio
+      id="audio2"
+      src="https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/wor/word_/word__us_1.mp3"
+    ></audio>
+    <audio
+      id="audio3"
+      src="https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/word_/word__gb_1.mp3"
+    ></audio>
+    <!-- Thêm các audio khác tại đây -->
+
+    <script src="../SourceVideo/js/main.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        transition: transform 0.5s, color 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      var paragraphs = [];
+      var audioElements = [];
+
+      function createParagraphsAndButtons() {
+        var container = document.getElementById("container");
+
+        for (var i = 0; i < 10; i++) {
+          var p = document.createElement("p");
+          p.textContent = "Đây là đoạn văn bản " + (i + 1);
+          paragraphs.push(p);
+          container.appendChild(p);
+
+          var button = document.createElement("button");
+          button.textContent = "Button " + (i + 1);
+          button.setAttribute("data-index", i);
+          button.addEventListener("click", toggleEffect);
+          container.appendChild(button);
+
+          var audioElement = document.createElement("audio");
+          audioElement.setAttribute(
+            "src",
+            "path_to_audio_file" + (i + 1) + ".mp3"
+          );
+          audioElements.push(audioElement);
+          container.appendChild(audioElement);
+        }
+      }
+
+      function toggleEffect(event) {
+        var index = event.target.getAttribute("data-index");
+        var paragraph = paragraphs[index];
+        var audioElement = audioElements[index];
+
+        if (paragraph.style.color === "blue") {
+          paragraph.style.color = "";
+          paragraph.style.transform = "";
+          stopSound(audioElement);
+        } else {
+          paragraph.style.color = "blue";
+          paragraph.style.transform = "translateY(-50px)";
+          playSound(audioElement);
+        }
+      }
+
+      function playSound(audioElement) {
+        audioElement.currentTime = 0;
+        audioElement.play();
+      }
+
+      function stopSound(audioElement) {
+        audioElement.pause();
+        audioElement.currentTime = 0;
+      }
+
+      // Call the function to create paragraphs and buttons
+      createParagraphsAndButtons();
+    </script>
+  </body>
+</html> -->

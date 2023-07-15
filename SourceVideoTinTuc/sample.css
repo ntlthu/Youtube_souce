@@ -1,0 +1,53 @@
+.testimonials__content .slider-info {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 2rem;
+  /* display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 50px; */
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.testimonials__content .message p {
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+}
+
+.testimonials .testimonials__content .owl-two.owl-theme .owl-nav [class*="owl-prev"],
+.testimonials .testimonials__content .owl-two.owl-theme .owl-nav [class*="owl-next"] {
+  display: none;
+}
+
+.testimonials .owl-theme .owl-dots .owl-dot span {
+  width: 40px;
+  height: 5px;
+  margin: 5px 5px;
+  background: #fd2f2f;
+  display: inline-block;
+  border: none;
+  transition: all 0.2s ease;
+  border-radius: 0;
+  margin-top: 30px;
+}
+
+.testimonials .owl-theme .owl-dots .owl-dot.active span,
+.testimonials .owl-theme .owl-dots .owl-dot:hover span {
+  background: pink;
+}
+
+
+#owl-demo .item p {
+  /* display: block; */
+  width: 100%;
+  height: auto;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #FF0000, #0000FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
