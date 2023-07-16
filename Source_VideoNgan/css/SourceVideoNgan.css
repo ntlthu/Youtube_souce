@@ -306,11 +306,11 @@
   }
   .highlight {
     /* màu nước ↓ */
-    background-image: linear-gradient(to right, #a9d8d7, #d0f1f9, #c7ceea);
+    /* background-image: linear-gradient(to right, #a9d8d7, #d0f1f9, #c7ceea); */
     /* color: #dc4f72; */
     /* background-image: linear-gradient(to right, #FAD0C9, #A9D8D7, #FDE3A7); */
     /* color: rgb(223, 5, 5); */
-    color: red;
+    color: #b30584;
     /* background: linear-gradient(to right, #DCEDC8, #FFF9C4, #FFE0B2); */
     /* background: linear-gradient(to right, #F8BBD0, #FFCC80, #FFF59D); */
     transition: transform 0.5s;
@@ -318,6 +318,9 @@
     box-shadow: 10px 10px 5px rgb(194, 193, 193);
     border-radius: 10px;
     /* padding: 3px 10px; */
+    /* background-image: url(../img/hinhnenlogo19.png);
+    background-repeat: no-repeat;
+    background-position: center; */
   }
   #contentChange p.active {
     transition: transform 0.5s;
@@ -332,17 +335,18 @@
     color: #004aad;
     
   }
+  .slideCarousel .VNText {
+    font-size: 50px;
+    font-weight: 900;
+    
+  }
   .slideCarousel .JPTextDai {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 8px;
     color: #004aad;
   }
-  .slideCarousel .VNText {
-    font-size: 50px;
-    font-weight: 700;
-    color: black
-  }
+ 
 
   .slideCarousel .changeContent p b {
     color: #b70387;
